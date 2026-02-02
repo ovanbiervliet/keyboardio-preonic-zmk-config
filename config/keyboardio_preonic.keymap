@@ -31,7 +31,7 @@
 / {
     chosen {
         // Valid choices: [ &mit_layout, &ortho_layout ]
-        zmk,physical-layout = &ortho_layout;
+        zmk,physical-layout = &mit_layout;
     };
 
     macros {
@@ -214,7 +214,6 @@
         &kp ESC     &hrm LSFT  A   &hrm LCTRL R   &hrm LALT  S   &hrm LGUI  T   &kp D    &kp H    &hrm LGUI  N   &hrm LALT  E   &hrm LCTRL I   &hrm RSFT O   &kp SQT
         &kp LA(LG(FSLH))  &kp Z    &kp X          &kp C          &kp V          &kp B    &kp K    &kp M          &kp COMMA      &kp PERIOD     &kp SLASH     &kp LG(SPACE)
         &kp DELETE  &kp LCTRL   &kp LALT    &kp LGUI    &lt LOWER SPACE   &mkp MB1   &kp TAB   &lt RAISE ENTER   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-
         >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;     
         };
