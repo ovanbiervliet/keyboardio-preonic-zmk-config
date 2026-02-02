@@ -204,7 +204,7 @@
         &kp TAB     &kp Q          &kp W          &kp F          &kp P          &kp G    &kp J    &kp L          &kp U          &kp Y          &kp SEMI      &kp BKSP
         &kp ESC     &hrm LSFT  A   &hrm LCTRL R   &hrm LALT  S   &hrm LGUI  T   &kp D    &kp H    &hrm LGUI  N   &hrm LALT  E   &hrm LCTRL I   &hrm RSFT O   &kp SQT
         &kp LA(LG(FSLH))  &kp Z    &kp X          &kp C          &kp V          &kp B    &kp K    &kp M          &kp COMMA      &kp PERIOD     &kp SLASH     &kp LG(SPACE)
-        &kp HYPER   &kp LCTRL   &kp LALT    &kp LGUI    &lt LOWER SPACE   &mkp MB1   &kp TAB   &lt RAISE ENTER   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+        &kp DELETE  &kp LCTRL   &kp LALT    &kp LGUI    &lt LOWER SPACE   &mkp MB1   &kp TAB   &lt RAISE ENTER   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
 
         >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;     
@@ -214,10 +214,10 @@ lower_layer {
             label = "Lower";
             bindings = <
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &caps_word   &kp KP_MULTIPLY &kp KP_MINUS  &kp DELETE
-                &trans      &trans      &trans      &trans      &trans      &trans      &tran       &kp KP_N7    &kp KP_N8      &kp KP_N9  &kp LS(SEMI)    &kp BKSP
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N4    &kp KP_N5      &kp KP_N6  &kp COMMA       &kp KP_ENTER
-                &trans      &trans      &trans      &trans      &trans      &trans      &kp LSG()      &kp KP_N1    &kp KP_N2      &kp KP_N3  &kp FSLSH       &kp SPACE
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BKSP    &mkp MB1     &kp KP_N0      &kp KP_DOT     &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N7   &kp KP_N8    &kp KP_N9   &kp LS(SEMI)   &kp BKSP
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N4   &kp KP_N5    &kp KP_N6   &kp COMMA      &kp KP_ENTER
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N1   &kp KP_N2    &kp KP_N3   &kp FSLSH      &kp SPACE
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BKSP    &mkp MB1     &kp KP_N0   &kp KP_DOT     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
