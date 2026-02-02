@@ -13,7 +13,8 @@
 
 #define LOWER 1
 #define RAISE 2
-#define FN 3
+#define CONFG 3
+#define OTHER 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
