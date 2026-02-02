@@ -164,17 +164,7 @@
         &kp HYPER   &kp LCTRL   &kp LALT    &kp LGUI    &hrm &mo LOWER &kp SPACE   &mkp MB1   &kp TAB   &hrm &mo RAISE &kp ENTER   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
 
         >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;    
-                                                                                                             &kp C_PP    &mo OTHER   &kp C_MUTE
- &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
- &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G       &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp BKSP
- &kp ESC     &hrm LSFT A &hrm LCTRL R &hrm LALT S &hrm LGUI T &kp D       &kp H       &hrm LGUI N &hrm LALT E &hrm LCTRL I &hrm RSFT O &kp SQT
- &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp K       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH   &kp ENTER
- &kp HYPER   &kp LCTRL   &kp LALT    &kp LGUI    &mo LOWER         &kp SPACE         &mo RAISE   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
- 
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;     
         };
 
 lower_layer {
