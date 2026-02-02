@@ -31,6 +31,19 @@
     };
 
     macros {
+        // Cmd + mouse button 4
+        cmd_mb4: cmd_mb4 {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_MB4";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&mkp MB4>,
+                <&macro_release &kp LGUI>;
+        };
+
         // From Finder, go to the Home directory
         finder_home: finder_home {
             compatible = "zmk,behavior-macro";
@@ -105,22 +118,59 @@
         };
     };
 
+    behaviors {
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            // param 0 = hold behavior, param 1 = tap behavior
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             label = "Base";
-            bindings = <
-                                                                                                             &kp C_PP    &mo OTHER   &kp C_MUTE
+        bindings = <
+                                                                                     &kp C_PP      &mo OTHER       &kp C_MUTE
 
+        // Number row: starts with 1 (no Grave key), then 2–0, - and =
+        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL
+
+        // Colemak top alpha row
+        &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G       &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp BKSP
+
+        // Colemak home row with homerow mods:
+        // Left hand: A R S T = Shift, Ctrl, Alt, Command
+        // Right hand: N E I O = Command, Alt, Ctrl, Shift (reversed)
+        &kp ESC     &hrm LSFT  A   &hrm LCTRL R   &hrm LALT  S   &hrm LGUI  T   &kp D
+                    &kp H          &hrm LGUI  N   &hrm LALT  E   &hrm LCTRL I   &hrm RSFT O   &kp SQT
+
+        // Bottom row with remapped mouse buttons:
+        // X  = Command + MB4 (was Cmd+MB7)
+        // C  = MB4           (was MB7)
+        // B  = MB5           (was MB8)
+        &kp LSHFT   &kp Z       &cmd_mb4    &mkp MB4    &kp V       &mkp MB5    &kp K       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH   &kp ENTER
+
+        // Thumbs / navigation
+        &kp HYPER   &kp LCTRL   &kp LALT    &kp LGUI    &hrm &mo LOWER &kp SPACE   &mkp MB1   &kp TAB   &hrm &mo RAISE &kp ENTER   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+
+        >;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;    
+                                                                                                             &kp C_PP    &mo OTHER   &kp C_MUTE
  &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
- &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BKSP
- &kp ESC     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
- &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH   &kp ENTER
+ &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G       &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp BKSP
+ &kp ESC     &hrm LSFT A &hrm LCTRL R &hrm LALT S &hrm LGUI T &kp D       &kp H       &hrm LGUI N &hrm LALT E &hrm LCTRL I &hrm RSFT O &kp SQT
+ &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp K       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH   &kp ENTER
  &kp HYPER   &kp LCTRL   &kp LALT    &kp LGUI    &mo LOWER         &kp SPACE         &mo RAISE   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
 
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;            
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+ 
         };
 
         lower_layer {
