@@ -13,8 +13,7 @@
 
 #define LOWER 1
 #define RAISE 2
-#define CONFG 3
-#define OTHER 4
+#define OTHER 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -112,7 +111,7 @@
         base_layer {
             label = "Base";
             bindings = <
-                                                                                                             &kp C_PP    &mo FN      &kp C_MUTE
+                                                                                                             &kp C_PP    &mo OTHER   &kp C_MUTE
 
  &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
  &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BKSP
@@ -155,7 +154,7 @@
         };
 
         func_layer {
-            label = "Function";
+            label = "Other";
             bindings = <
                                                                                                              &trans      &trans      &trans
 
