@@ -208,7 +208,6 @@
             label = "Base";
         bindings = <
                                                                                      &kp C_PP      &mo OTHER       &kp C_MUTE
-
         &kp N1      &kp N2         &kp N3         &kp N4         &kp N5         &kp N6   &kp N7   &kp N8         &kp N9         &kp N0         &kp MINUS     &kp EQUAL
         &kp TAB     &kp Q          &kp W          &kp F          &kp P          &kp G    &kp J    &kp L          &kp U          &kp Y          &kp SEMI      &kp BKSP
         &kp ESC     &hrm LSFT  A   &hrm LCTRL R   &hrm LALT  S   &hrm LGUI  T   &kp D    &kp H    &hrm LGUI  N   &hrm LALT  E   &hrm LCTRL I   &hrm RSFT O   &kp SQT
@@ -221,6 +220,7 @@
 lower_layer {
             label = "Lower";
             bindings = <
+                                                                                     &kp C_PP      &mo OTHER       &kp C_MUTE
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &caps_word   &kp KP_MULTIPLY &kp KP_MINUS  &kp DELETE
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N7   &kp KP_N8    &kp KP_N9   &kp LS(SEMI)   &kp BKSP
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N4   &kp KP_N5    &kp KP_N6   &kp COMMA      &kp KP_ENTER
@@ -234,7 +234,6 @@ lower_layer {
             label = "Raise";
             bindings = <
                                                                                                                &trans     &trans     &trans
-
  &kp ESC     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7       &kp F8       &kp F9     &kp F10    &kp BKSP
  &trans      &trans      &trans      &trans      &trans      &trans      &kp BSLH    &kp LS(LBKT) &kp LS(RBKT) &kp LBKT   &kp RBKT   &kp DEL
  &kp CAPS    &trans      &trans      &trans      &trans      &trans      &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT  &trans     &trans
