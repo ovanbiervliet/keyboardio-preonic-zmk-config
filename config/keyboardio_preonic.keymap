@@ -219,7 +219,7 @@
 
         lower_layer {
             label = "Lower";
-            bindings = < 
+            bindings = <
                                                                                                                                                        &kp C_PP      &mo OTHER       &kp C_MUTE
                 &trans             &trans        &trans        &trans          &trans      &trans               &trans      &trans      &caps_word   &kp KP_MULTIPLY &kp KP_MINUS    &kp DELETE
                 &trans             &trans        &trans        &trans          &trans      &trans               &trans      &kp KP_N7   &kp KP_N8    &kp KP_N9       &kp LS(SEMI)    &kp BKSP
