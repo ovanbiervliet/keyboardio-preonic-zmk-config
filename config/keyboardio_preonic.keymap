@@ -225,7 +225,7 @@
                 &trans             &trans        &trans        &trans          &trans      &trans               &trans      &kp KP_N7   &kp KP_N8    &kp KP_N9       &kp LS(SEMI)    &kp BKSP
                 &trans             &trans        &trans        &trans          &trans      &trans               &kp KP_PLUS  &kp KP_N4   &kp KP_N5   &kp KP_N6       &kp COMMA       &trans
                 &trans             &trans        &trans        &trans          &trans      &trans               &kp KP_MINUS &kp KP_N1   &kp KP_N2   &kp KP_N3       &kp KP_DOT      &kp FSLH
-                &trans             &trans        &trans        &trans          &trans      &trans               &trans      &kp KP_N0    &mkp MB4    ‎&mkp MB5        ‎&mkp MB6        ‎&mkp MB7
+                &trans             &trans        &trans        &trans          &trans      &trans               &trans      &kp KP_N0    &mkp MB4    ‎&mkp MB5        ‎&trans      ‎&trans
                 >;
                 sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
             };
