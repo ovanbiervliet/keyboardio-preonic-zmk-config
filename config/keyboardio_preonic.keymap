@@ -31,10 +31,10 @@
 #define HYPER LC(LS(LA(LGUI)))
 
 / {
-//    chosen {
-//        // Valid choices: [ &mit_layout, &ortho_layout ]
-//        zmk,physical-layout = &ortho_layout;
-//    };
+    chosen {
+        // Valid choices: [ &mit_layout, &ortho_layout ]
+        zmk,physical-layout = &ortho_layout;
+    };
 
     macros {
         // Cmd + mouse button 4
