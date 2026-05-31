@@ -186,7 +186,7 @@
                 &kp TAB           &kp Q          &kp W          &kp F          &kp P          &kp G             &kp J    &kp L          &kp U          &kp Y          &kp SEMI      &kp BSPC
                 &kp ESC           &hml LSHIFT  A   &hml LCTRL R   &hml LALT  S   &hml LGUI  T   &kp D             &kp H    &hmr LGUI  N   &hmr LALT  E   &hmr LCTRL I   &hmr RSHIFT O   &kp SQT
                 &kp LA(LG(FSLH))  &kp Z          &kp X          &kp C          &kp V          &kp B             &kp K    &kp M          &kp COMMA      &kp PERIOD     &hmr LA(LG(SLASH)) SLASH     &kp LG(SPACE)
-                &mkp MB5          &mkp MB4       &mkp MB3       &mkp MB2       &lt LOWER SPACE   &mkp MB1      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
+                &mkp MB4          &mkp MB4       &mkp MB3       &mkp MB2       &lt LOWER SPACE   &mkp MB1      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
                 >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -199,7 +199,7 @@
                 &kp TAB           &kp Q          &kp W          &kp E          &kp R          &kp T             &kp Y    &kp U          &kp I          &kp O          &kp P         &kp BSPC
                 &kp ESC           &hml LSHIFT A  &hml LCTRL S   &hml LALT D    &hml LGUI F    &kp G             &kp H    &hmr LGUI J    &hmr LALT K    &hmr LCTRL L   &hmr RSHIFT SEMI &kp SQT
                 &kp LA(LG(FSLH))  &kp Z          &kp X          &kp C          &kp V          &kp B             &kp N    &kp M          &kp COMMA      &kp PERIOD     &hmr LA(LG(SLASH)) SLASH     &kp LG(SPACE)
-                &mkp MB5          &mkp MB4       &mkp MB3       &mkp MB2       &lt LOWER SPACE   &mkp MB1      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
+                &mkp MB4          &mkp MB4       &mkp MB3       &mkp MB2       &lt LOWER SPACE   &mkp MB1      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
