@@ -219,7 +219,7 @@
 
         raise_layer {
             display-name = "Raise";
-            bindings = <7
+            bindings = <
                                                                                                                                                       &trans        &trans     &trans
                  &kp ESC           &kp F1        &kp F2        &kp F3         &kp F4      &kp F5                &kp F6      &kp F7       &kp F8       &kp F9        &kp F10    &kp BSPC
                  &trans            &kp EXCL      &kp AT        &kp HASH       &kp DLLR    &kp PRCNT             &kp CARET   &kp AMPS     &kp STAR     &kp MINUS     &kp EQUAL  &kp DELETE
