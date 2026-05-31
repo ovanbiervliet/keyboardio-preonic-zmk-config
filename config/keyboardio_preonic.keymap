@@ -185,8 +185,8 @@
                 &kp N1            &kp N2         &kp N3         &kp N4         &kp N5         &kp N6            &kp N7   &kp N8         &kp N9         &kp N0         &kp MINUS     &kp EQUAL
                 &kp TAB           &kp Q          &kp W          &kp F          &kp P          &kp G             &kp J    &kp L          &kp U          &kp Y          &kp SEMI      &kp BSPC
                 &kp ESC           &hml LSHIFT  A   &hml LCTRL R   &hml LALT  S   &hml LGUI  T   &kp D             &kp H    &hmr LGUI  N   &hmr LALT  E   &hmr LCTRL I   &hmr RSHIFT O   &kp SQT
-                &kp LA(LG(FSLH))  &kp Z          &kp X          &kp C          &kp V          &kp B             &kp K    &kp M          &kp COMMA      &kp PERIOD     &kp SLASH     &kp LG(SPACE)
-                &kp DELETE        &mkp MB3       &mkp MB2       &mkp MB1       &lt LOWER SPACE   &kp SPACE      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
+                &kp LA(LG(FSLH))  &kp Z          &kp X          &kp C          &kp V          &kp B             &kp K    &kp M          &kp COMMA      &kp PERIOD     &hmr LA(LG(FSLH)) SLASH     &kp LG(SPACE)
+                &mkp MB7          &mkp MB4       &mkp MB3       &mkp MB2       &lt LOWER SPACE   &mkp MB1      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
                 >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -198,8 +198,8 @@
                 &kp N1            &kp N2         &kp N3         &kp N4         &kp N5         &kp N6            &kp N7   &kp N8         &kp N9         &kp N0         &kp MINUS     &kp EQUAL
                 &kp TAB           &kp Q          &kp W          &kp E          &kp R          &kp T             &kp Y    &kp U          &kp I          &kp O          &kp P         &kp BSPC
                 &kp ESC           &hml LSHIFT A  &hml LCTRL S   &hml LALT D    &hml LGUI F    &kp G             &kp H    &hmr LGUI J    &hmr LALT K    &hmr LCTRL L   &hmr RSHIFT SEMI &kp SQT
-                &kp LA(LG(FSLH))  &kp Z          &kp X          &kp C          &kp V          &kp B             &kp N    &kp M          &kp COMMA      &kp PERIOD     &kp SLASH     &kp LG(SPACE)
-                &kp DELETE        &mkp MB3       &mkp MB2       &mkp MB1       &lt LOWER SPACE   &kp SPACE      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
+                &kp LA(LG(FSLH))  &kp Z          &kp X          &kp C          &kp V          &kp B             &kp N    &kp M          &kp COMMA      &kp PERIOD     &hmr LA(LG(FSLH)) SLASH     &kp LG(SPACE)
+                &mkp MB7          &mkp MB4       &mkp MB3       &mkp MB2       &lt LOWER SPACE   &mkp MB1      &kp TAB  &lt RAISE ENTER   &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -210,7 +210,7 @@
                                                                                                                                                        &kp C_PP      &mo OTHER       &kp C_MUTE
                 &trans             &trans        &trans        &trans          &trans      &trans               &trans      &trans       &trans    &kp KP_MULTIPLY &kp KP_MINUS    &kp DELETE
                 &trans             &trans        &trans        &trans          &trans      &trans               &trans      &kp KP_N7    &kp KP_N8   &kp KP_N9       &kp LS(SEMI)    &kp BSPC
-                &caps_word         &trans        &trans        &trans          &trans      &trans               &kp KP_PLUS  &kp KP_N4   &kp KP_N5   &kp KP_N6       &kp COMMA       &trans
+                &capdance          &trans        &trans        &trans          &trans      &trans               &kp KP_PLUS  &kp KP_N4   &kp KP_N5   &kp KP_N6       &kp COMMA       &trans
                 &trans             &trans        &trans        &trans          &trans      &trans               &kp KP_MINUS &kp KP_N1   &kp KP_N2   &kp KP_N3       &kp KP_DOT      &kp FSLH
                 &trans             &trans        &trans        &trans          &trans      &trans               &trans      &kp KP_N0    &mkp MB4    &trans          &trans          &mkp MB5
             >;
@@ -219,13 +219,13 @@
 
         raise_layer {
             display-name = "Raise";
-            bindings = <
+            bindings = <7
                                                                                                                                                       &trans        &trans     &trans
                  &kp ESC           &kp F1        &kp F2        &kp F3         &kp F4      &kp F5                &kp F6      &kp F7       &kp F8       &kp F9        &kp F10    &kp BSPC
-                 &trans            &trans        &trans        &trans         &trans      &trans                &kp BSLH    &kp LS(LBKT) &kp LS(RBKT) &kp LBKT      &kp RBKT   &kp DEL
-                 &capdance         &kp LS(N9)    &kp LS(LBKT)  &kp LS(RBKT)   &kp LS(N0)  &trans                &trans      &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT  &trans
-                 &trans            &kp LS(COMMA) &kp LBKT      &kp RBKT       &kp LS(DOT) &trans                &trans      &trans       &trans       &trans        &trans     &trans
-                 &trans            &trans        &trans        &trans         &mo OTHER   &trans                &trans      &trans      &trans       &trans        &trans     &trans
+                 &trans            &kp EXCL      &kp AT        &kp HASH       &kp DLLR    &kp PRCNT             &kp CARET   &kp AMPS     &kp STAR     &kp MINUS     &kp EQUAL  &kp DELETE
+                 &BSLH             &kp LPAR  &kp LS(LBKT)      &kp LS(RBKT)   &kp RPAR    &kp LS(LA(NUMBER_2))  &kp EQUAL   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT  &kp END
+                 &kp GRAVE         &kp LT        &kp LBKT      &kp RBKT       &kp GT      &kp LA(NUMBER_3)      &kp MINUS   &kp MINUS    &kp PGDN     &kp PGUP      &kp EQUAL  &trans
+                 &trans            &trans        &trans        &trans         &mo OTHER   &trans                &trans      &trans       &trans       &trans        &trans     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
