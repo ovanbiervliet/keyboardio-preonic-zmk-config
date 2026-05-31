@@ -223,8 +223,8 @@
                                                                                                                                                       &trans        &trans     &trans
                  &kp ESC           &kp F1        &kp F2        &kp F3         &kp F4      &kp F5                &kp F6      &kp F7       &kp F8       &kp F9        &kp F10    &kp BSPC
                  &trans            &kp EXCL      &kp AT        &kp HASH       &kp DLLR    &kp PRCNT             &kp CARET   &kp AMPS     &kp STAR     &kp MINUS     &kp EQUAL  &kp DELETE
-                 &BSLH             &kp LPAR  &kp LS(LBKT)      &kp LS(RBKT)   &kp RPAR    &kp LS(LA(NUMBER_2))  &kp EQUAL   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT  &kp END
-                 &kp GRAVE         &kp LT        &kp LBKT      &kp RBKT       &kp GT      &kp LA(NUMBER_3)      &kp MINUS   &kp MINUS    &kp PGDN     &kp PGUP      &kp EQUAL  &trans
+                 &BSLH             &kp LPAR      &kp LS(LBKT)  &kp LS(RBKT)   &kp RPAR    &kp LS(LA(N2))        &kp EQUAL   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT  &kp END
+                 &kp GRAVE         &kp LT        &kp LBKT      &kp RBKT       &kp GT      &kp LA(N3)            &kp MINUS   &kp MINUS    &kp PGDN     &kp PGUP      &kp EQUAL  &trans
                  &trans            &trans        &trans        &trans         &mo OTHER   &trans                &trans      &trans       &trans       &trans        &trans     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
